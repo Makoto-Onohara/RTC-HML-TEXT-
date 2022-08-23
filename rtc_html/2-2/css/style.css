@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+
+    /* スクロールしてもヘッダーがついてくるように */
+    position: fixed;
+    /* paddingで広がった部分も考慮するため(←ここはちょっと難しい内容なので、box-sizingで調べてみてください!) */
+    box-sizing: border-box;
+    /* ヘッダーの横幅に空白をつける */
+    padding: 0 50px;
+    /* 後で画面全体が青っぽくなるので、ヘッダー部分だけ白くしておく */
+    background-color: white;
+    /* ヘッダーの下に薄い影を付けて立体的に見せる */
+    box-shadow: 3px 3px rgba(0,0,0,.075);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
